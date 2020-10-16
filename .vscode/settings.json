@@ -1,0 +1,13 @@
+{
+    "git.ignoreLimitWarning": true,
+    "objectscript.conn": {
+    
+        "active": true,
+        "host": "localhost",
+        "port": 52773,
+        "ns": "hl7-to-pdf",
+        "username": "_SYSTEM",
+        "password": "SYS",
+        "https": false
+    }
+}
