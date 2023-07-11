@@ -11,6 +11,7 @@ COPY Installer.cls .
 COPY src src
 COPY iris.script /tmp/iris.script
 COPY requirements.txt .
+COPY wkhtmltox_0.12.6.1-2.jammy_arm64/usr/local /usr/local
 
 USER ${ISC_PACKAGE_MGRUSER}
 

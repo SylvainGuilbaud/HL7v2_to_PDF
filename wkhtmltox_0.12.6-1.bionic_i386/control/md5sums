@@ -1,0 +1,10 @@
+7314bd2c6e10b8d4ee38ad140947e3ce  usr/local/bin/wkhtmltoimage
+5b35a78e60d8255caafa680bf5001244  usr/local/bin/wkhtmltopdf
+5cca841987dcac2b8567f8f5854d77ce  usr/local/include/wkhtmltox/dllbegin.inc
+6bc44ddbb5a6a9b473e2bf043e44f205  usr/local/include/wkhtmltox/dllend.inc
+21a08b4573aa776f869a01a9d4ff8e28  usr/local/include/wkhtmltox/image.h
+86b32413175721b3d215f8f78e76d62a  usr/local/include/wkhtmltox/pdf.h
+333292d4a25a560a7bf6db8d93b5e909  usr/local/lib/libwkhtmltox.so.0.12.6
+66cdd557641bf55ffc3a2efa5c3b6a9e  usr/local/share/man/man1/wkhtmltoimage.1.gz
+d8db859a20cf7d17a837d2cf332f6181  usr/local/share/man/man1/wkhtmltopdf.1.gz
+ba41976c9973b9b5b4222c83ed3f9ffc  usr/share/doc/wkhtmltox/changelog.gz
