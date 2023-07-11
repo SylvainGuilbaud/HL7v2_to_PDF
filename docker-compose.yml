@@ -3,8 +3,8 @@ services:
     build: 
       context: .
     restart: always
-    container_name: foteex-iris
-    hostname: foteex-iris
+    container_name: hl7-to-pdf-iris
+    hostname: hl7-to-pdf-iris
     ports:
       - 1972
       - 52773

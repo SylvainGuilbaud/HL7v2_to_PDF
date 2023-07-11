@@ -1,4 +1,4 @@
-ARG IMAGE=intersystemsdc/iris-community:latest
+ARG IMAGE=intersystemsdc/irishealth-community:latest
 # ARG IMAGE=containers.intersystems.com/intersystems/iris-community:2023.1.0.235.1
 # ARG IMAGE=containers.intersystems.com/intersystems/iris-community-arm64:2023.1.0.235.1
 FROM $IMAGE
