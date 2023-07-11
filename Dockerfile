@@ -16,7 +16,6 @@ RUN apt update && apt install -y fontconfig xfonts-75dpi xfonts-base && rm -rf /
   && dpkg -i /tmp/wkhtmltox \
   && rm /tmp/wkhtmltox
   
-
 # ARM64
 # RUN apt update && apt install -y fontconfig xfonts-75dpi xfonts-base && rm -rf /var/lib/apt/lists/* \
 #   && wget -q -O /tmp/wkhtmltox https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_arm64.deb \
