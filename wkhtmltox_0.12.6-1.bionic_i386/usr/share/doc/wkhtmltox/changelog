@@ -1,5 +1,0 @@
-wkhtmltox (1:0.12.6-1.bionic) whatever; urgency=medium
-
-  * Package created with FPM.
-
- -- Ashish Kulkarni <ashish@kulkarni.dev>  Wed, 10 Jun 2020 19:41:28 +0000

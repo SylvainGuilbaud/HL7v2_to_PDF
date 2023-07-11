@@ -25,8 +25,5 @@
     set ^["USER"]TRACE("IRISAPP "_app)="successful"
  }
  zn "IRISAPP" 
-#; LOAD DATA
-#; todo
-#; IMPORT PIVOTS and DASHBOARDS
-#; todo
+ set ^Ens.AutoStart	=	"LabResult.prod.HL7toPDF"
  halt

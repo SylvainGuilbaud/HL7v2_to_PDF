@@ -1,5 +1,0 @@
-wkhtmltox (1:0.12.6.1-2.jammy) whatever; urgency=medium
-
-  * Package created with FPM.
-
- -- Ashish Kulkarni <ashish@kulkarni.dev>  Mon, 27 Jun 2022 20:10:56 +0000

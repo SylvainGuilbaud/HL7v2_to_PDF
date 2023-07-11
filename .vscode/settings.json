@@ -1,4 +1,8 @@
 {
+    "files.associations": {
+        "Dockerfile*": "dockerfile",
+        "iris.script": "objectscript"
+      },
     "git.ignoreLimitWarning": true,
     "objectscript.conn": {
         "ns": "irisapp",
