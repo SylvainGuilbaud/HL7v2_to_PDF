@@ -3,8 +3,8 @@ services:
     build: 
       context: .
     restart: always
-    container_name: hl7-to-pdf-iris
-    hostname: hl7-to-pdf-iris
+    container_name: ${iris_container_name}
+    hostname: ${iris_container_name}
     ports:
       - 1972
       - 52773
