@@ -1,0 +1,17 @@
+services:
+  iris:
+    build: 
+      context: .
+    restart: always
+    container_name: foteex-iris
+    hostname: foteex-iris
+    ports:
+      - 1972
+      - 52773
+      - 53773
+    command: --check-caps false
+    volumes:
+      - ./data:/data
+
+
+

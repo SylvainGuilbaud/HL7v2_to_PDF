@@ -1,13 +1,11 @@
 {
     "git.ignoreLimitWarning": true,
     "objectscript.conn": {
-    
+        "ns": "user",
         "active": true,
-        "host": "localhost",
-        "port": 52773,
-        "ns": "hl7-to-pdf",
-        "username": "_SYSTEM",
-        "password": "SYS",
-        "https": false
+        "server": "irishealth",
+        "links": {
+            "terminal": "http://localhost:52773/terminal/"
+        }
     }
 }

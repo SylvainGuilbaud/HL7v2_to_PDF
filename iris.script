@@ -1,0 +1,32 @@
+ set r=##class(%Net.HttpRequest).%New(),r.Server="pm.community.intersystems.com",r.SSLConfiguration="ISC.FeatureTracker.SSL.Config" d r.Get("/packages/zpm/latest/installer"),$system.OBJ.LoadStream(r.HttpResponse.Data,"c")
+ zpm "install webterminal"
+ zpm "install swagger-ui" 
+ zpm "install classexplorer" 
+ write "INSTALLING IRISAPP"
+ do $SYSTEM.OBJ.Load("/app/Installer.cls", "ck")
+ set sc = ##class(App.Installer).setup()
+ if 'sc {
+    set ^["USER"]TRACE("IRISAPP App.Installer")=$lb($system.Status.GetErrorCodes(sc),$system.Status.GetErrorText(sc))
+ } else {
+    set ^["USER"]TRACE("IRISAPP App.Installer")="successful"
+ }
+ zn "%SYS"
+ do ##class(Security.Users).UnExpireUserPasswords("*")
+ zn "IRISAPP" 
+ do $System.OBJ.LoadDir("/app/src","ck",,1)
+ zn "%sys"
+ set prop("AutheEnabled")=32
+ set prop("DeepSeeEnabled")=1
+ set app="/csp/irisapp"
+ set sc = ##class(Security.Applications).Modify(app,.prop)
+  if 'sc {
+    set ^["USER"]TRACE("IRISAPP "_app)=$lb($system.Status.GetErrorCodes(sc),$system.Status.GetErrorText(sc))
+ } else {
+    set ^["USER"]TRACE("IRISAPP "_app)="successful"
+ }
+ zn "IRISAPP" 
+#; LOAD DATA
+#; todo
+#; IMPORT PIVOTS and DASHBOARDS
+#; todo
+ halt
