@@ -24,6 +24,18 @@ XData ProductionDefinition
     <Setting Target="Host" Name="PDFgenerator">1</Setting>
     <Setting Target="Host" Name="ArchiveIO">0</Setting>
   </Item>
+  <Item Name="from Lab TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+    <Setting Target="Adapter" Name="Port">9000</Setting>
+    <Setting Target="Host" Name="MessageSchemaCategory">2.3</Setting>
+    <Setting Target="Host" Name="TargetConfigNames">LABO</Setting>
+    <Setting Target="Host" Name="AddNackERR">1</Setting>
+    <Setting Target="Host" Name="ArchiveIO">1</Setting>
+  </Item>
+  <Item Name="to LAB TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+    <Setting Target="Adapter" Name="IPAddress">127.0.0.1</Setting>
+    <Setting Target="Adapter" Name="Port">9000</Setting>
+    <Setting Target="Host" Name="ArchiveIO">1</Setting>
+  </Item>
 </Production>
 }
 
